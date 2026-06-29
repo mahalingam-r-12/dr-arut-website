@@ -147,6 +147,8 @@ section.block{padding:104px 0;}
 .quote-card::before{content:"\201C";position:absolute;top:6px;left:24px;font-family:var(--serif);font-size:120px;color:var(--gold);opacity:.32;line-height:1;}
 .quote-card .q{font-family:var(--serif);font-style:italic;font-size:25px;line-height:1.36;position:relative;}
 .quote-card .by{margin-top:22px;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold-soft);}
+.focus-figure{margin:0 0 30px;}
+.focus-img{display:block;width:100%;height:auto;border-radius:4px;}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px;}
 .stat{background:var(--ivory-2);border:1px solid var(--line);border-radius:4px;padding:22px 18px;text-align:center;}
 .stat .n{font-family:var(--serif);font-size:38px;font-weight:600;color:var(--teal);line-height:1;}
@@ -162,6 +164,9 @@ section.block{padding:104px 0;}
 .exp-cell:hover{background:var(--teal-2);}
 .exp-cell h3{font-size:23px;color:var(--gold-soft);margin-bottom:10px;font-weight:500;}
 .exp-cell p{font-size:14.5px;color:rgba(248,245,239,.78);font-weight:300;line-height:1.6;}
+.expertise .long-prose{margin-bottom:2.5rem;}
+.expertise .long-prose p{margin-bottom:0;color:rgba(248,245,239,.88);}
+.expertise .long-prose .lead-line{font-size:clamp(17px,2vw,18px);line-height:1.65;color:var(--ivory);}
 
 /* ---------- LONGEVITY ---------- */
 .longevity{background:var(--ivory-2);}
@@ -174,6 +179,10 @@ section.block{padding:104px 0;}
 .long-prose h3{font-family:var(--serif);font-weight:600;font-size:23px;color:var(--teal);margin:34px 0 10px;}
 .long-prose h3:first-of-type{margin-top:30px;}
 .long-quote{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,28px);line-height:1.4;color:var(--teal);border-left:2px solid var(--gold);padding-left:30px;margin:30px 0;}
+.long-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:64px;align-items:start;}
+.long-grid .long-prose{max-width:none;}
+.long-figure{margin:0;position:sticky;top:96px;}
+.long-img{display:block;width:100%;height:auto;border-radius:4px;}
 
 /* ---------- CLINICAL WORK ---------- */
 .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;}
@@ -246,6 +255,9 @@ footer.site{background:var(--teal-2);color:var(--ivory);padding:64px 0 30px;bord
 .foot-col{display:flex;flex-direction:column;gap:13px;}
 .foot-col a{font-size:13px;letter-spacing:.5px;color:rgba(248,245,239,.78);transition:color .25s;}
 .foot-col a:hover{color:var(--gold);}
+.foot-disclaimer{padding:26px 0;border-bottom:1px solid var(--line-dark);font-size:12px;line-height:1.7;color:rgba(248,245,239,.55);font-weight:300;}
+.foot-disclaimer p{margin:0;}
+.foot-disclaimer strong{color:rgba(248,245,239,.78);font-weight:500;letter-spacing:.4px;}
 .foot-base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;font-size:11.5px;color:rgba(248,245,239,.55);letter-spacing:.4px;}
 .foot-base .tag{font-family:var(--serif);font-style:italic;color:var(--gold-soft);font-size:14px;}
 
@@ -271,6 +283,7 @@ footer.site{background:var(--teal-2);color:var(--ivory);padding:64px 0 30px;bord
   .hero-portrait{justify-content:center;}
   .portrait{max-width:min(86vw,420px);}
   .about-grid,.long-grid,.work-grid,.cred-grid{grid-template-columns:1fr;gap:40px;}
+  .long-figure{position:static;max-width:480px;}
   .exp-grid{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:720px){
